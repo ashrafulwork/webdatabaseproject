@@ -1,0 +1,49 @@
+.l1{
+    color: red;
+    
+}
+
+.div1{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-style: solid;
+    height: 500px;
+    text-align:center;
+}
+
+
+.l11{
+    color: aqua;
+    margin-left: 100px;
+    
+}
+
+.l12{
+    color: lawngreen;
+    margin-left: 106px;
+}
+
+.l1a{
+    color: orange;
+  
+}
+
+.l1b{
+    color: rebeccapurple;
+    margin-left: -8px;
+}
+
+.l1c{
+    color: orange;
+    margin-left: 50px;
+}
+
+.l1d{
+    color: rebeccapurple;
+    margin-left: 44px;
+}
+
+h1{
+    text-align: center;
+}

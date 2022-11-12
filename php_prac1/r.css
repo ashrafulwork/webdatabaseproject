@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 217, 217);
+}
+
+.container{
+
+    width: 600px;
+    height: 500px;
+    background-color: rgb(4, 217, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+ .front{
+
+
+    width: 250px;
+    height: 410px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    margin :25px 20px;
+   
+ }
+
+ .back{
+
+
+    width: 250px;
+    height: 410px;
+    background-color: white;
+    border-radius: 10px;
+    
+    float: right;
+    margin-right: 30px;
+    margin-top: 25px ;
+    
+    
+    
+
+ }

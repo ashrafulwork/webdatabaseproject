@@ -16,7 +16,7 @@
 					echo $_SESSION['msg']="";
 				}
 			?>
-<form action="insert.php" method="post" enctype="multipart">
+<form action="nid_insert.php" method="post" enctype="multipart">
 <div class="div1">
     <div class="div2">
         <br>

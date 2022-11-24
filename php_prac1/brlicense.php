@@ -16,7 +16,7 @@
 					echo $_SESSION['msg']="";
 				}
 			?>
-<form action="insert.php" method="post" enctype="multipart">
+<form action="brta_insert.php" method="post" enctype="multipart">
 <div class="div1">
     <div class="div2">
         <br>
@@ -34,18 +34,21 @@
 <span class="l1b"><label>পিতা/স্বামী/Father/Husband</label></span>
 <span class="l1"><input type="text" name="father_husband" />
 <span class="l12"><label>প্রদান </label></span>
-<span class="l1"><input type="text" name="issue" /><br><br><br>
+<span class="l1"><input type="date" name="issue" /><br><br><br>
 
 <span class="m2"><label>Validity</label></span>
-<span class="l1"><input type="text" name="validity" /><br><br><br>
+<span class="l1"><input type="date" name="validity" /><br><br><br>
 
 
     
     <span class="l1a"><label>License no. </label></span>
     <span class="l1"><input type="text" name="license" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br> <br>
+    <br>
         
-<span class="l1a"><label>Issue Authority </label></span>
-<span class="l1"><input type="text" name="authority" />
+        
+    <span class="l1l"><label>Issue Authority </label></span>
+    <span class="l1l"><input type="text" name="authority" />
     <p>Please fill out the information</p>
 
     <input type="submit" name="btnInfo" value="Insert" />

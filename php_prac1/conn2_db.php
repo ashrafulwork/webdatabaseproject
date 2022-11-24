@@ -5,6 +5,6 @@
 	$pwd = '';
 	/*Connection*/
 $dbCon = mysqli_connect($host, $userName, $pwd, $dbName);
-@define("BASE", "/webdatabaseproject/php_prac1/nid_input.php");
+@define("BASE", "/webdatabaseproject/php_prac1/brlicense.php");
 
 ?>

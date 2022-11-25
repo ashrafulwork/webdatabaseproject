@@ -1,11 +1,12 @@
 <?php 
 require_once("nid_showaction.php");
 ?>
-
+<span id="sp1">
 <div>
+	
 			<span style="text-align: center"><h3>Show List from Table Information</h3>
 			</span>
-            <link rel="stylesheet" type="text/css" href="text1.css"/>
+            <link rel="stylesheet" href="5.css">
 			<table border="1" align="center">
 				<tr style="background: #d5dbdb;">
 					<th>NAME1</th>
@@ -64,7 +65,14 @@ require_once("nid_showaction.php");
 					
 				</tr>
 				<?php }?>
+				
                
-			</table>		
-            <a href="/webdatabaseproject/php_prac1/nid_input.php"> BACK TO HOME</a>	
+			</table>
+			</span>
+			<br>
+			<span><a href="/webdatabaseproject/php_prac1/nid_input.php" id="a2">Back to HOME</a>
+			<br><br>
+            <span><a href="/webdatabaseproject/php_prac1/nid_update.php" id="a2">  Update Database</a>
+			
+			
 		</div>

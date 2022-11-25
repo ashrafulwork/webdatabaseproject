@@ -35,7 +35,9 @@
 
     <p>Please fill out the information</p>
 
-    <input type="submit" name="btnInfo" value="Insert" />
+    <input type="submit" name="btnInfo" value="Insert" /><br><br>
+    <a href="/webdatabaseproject/php_prac1/nid_show.php">Show NID DATABASE</a><br><br><br>
+    <a href="/webdatabaseproject/php_prac1/"> GO BACK TO HOME</a>	
 </div>
 </div>
 

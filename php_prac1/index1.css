@@ -1,12 +1,7 @@
-h1{
-    margin-bottom: 100px;
-}
-
-
 #a1{
     text-decoration: none;
     color: black;
-    margin-left: 500px;
+   margin-left: 550px;
     
     font-size: 20px;
     font-weight: bold;
@@ -24,7 +19,7 @@ h1{
     width:fit-content;
     text-decoration: none;
     color: black;
-    margin-left: 300px;
+    margin-left: 180px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 2px;
@@ -34,4 +29,6 @@ h1{
     background-color: aliceblue;
     
 }
-
+h1{
+    margin-bottom: 100px;
+}

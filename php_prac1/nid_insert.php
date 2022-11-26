@@ -2,16 +2,19 @@
 session_start();
 require_once("conn_db.php");
 if (isset($_POST['btnInfo']) == "Insert") {
-	$name1 = $_POST['nm1'];	
-	$name2 = $_POST['nm2'];	
+	$name1 = $_POST['name2'];	
+	$name2 = $_POST['name2'];	
 	$father = $_POST['father'];	
 	$mother = $_POST['mother'];	
 	
     $date = date_format(date_create($_POST['validity']),"Y-m-d");
+	$blood = $_POST['blood'];
     $nid = $_POST['nid'];
 	
+	
 	/*Insert into tbl_info*/
-	$insertData1 = "'$name1','$name2','$father','$mother','$date','$nid'";
+
+	$insertData1 = "'$name1','$name2','$father','$mother','$date','$blood','$nid'";
 	$insertSQL1 = "INSERT INTO nid_info VALUES($insertData1)";
 	$insertQuery1 = @mysqli_query($dbCon,$insertSQL1) or die("Error in Table Info Insertion: ".mysqli_error($dbCon));
 	/*Insert into tbl_user*/

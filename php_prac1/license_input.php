@@ -2,7 +2,7 @@
 session_start();
 require_once("conn_db.php");
 if (isset($_POST['btnInfo']) == "Insert") {
-	$name = $_POST['nm1'];	
+	$name1 = $_POST['name1'];	
 	$date1 = date_format(date_create($_POST['birth']),"Y-m-d");
 	
 	$blood = $_POST['blood'];	

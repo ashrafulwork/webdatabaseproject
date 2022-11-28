@@ -28,6 +28,7 @@ require_once("nid_showaction.php");
 					<th>DATE</th>
 					<th>BLOOD</th>
                     <th>NID</th>
+					
 				</tr>
 				<tr>
                     <td><?php echo $recSrch->name1; ?></td>
@@ -68,6 +69,7 @@ require_once("nid_showaction.php");
 					<th>DATE</th>
 					<th>BLOOD</th>
                     <th>NID</th>
+					<th>ACTIONS</th>
 				</tr>
 				<?php if($data>0){
 					$i=0;
@@ -82,6 +84,9 @@ require_once("nid_showaction.php");
 					<td><?php echo $recShow->date; ?></td>
 					<td><?php echo $recShow->blood; ?></td>
                     <td><?php echo $recShow->nid; ?></td>
+					<td>
+					<a target="_blank" href="nid.php?updtID=<?php echo $recShow->nid;?>">Card View</a>
+					</td>
 				</tr>
 				<?php $i++;}}?>
 			</table>			

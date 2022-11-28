@@ -31,11 +31,32 @@
 <span class="l1"><input type="text" name="mother" /><br><br><br>
 <span class="m1"><label>Date of Birth</label></span>
 <span class="l2"><input type="date" name="validity" />
-<span class="m2"><label>Blood Group</label></span>
-<span class="l1"><input type="text" name="blood" /><br><br><br><br>
+
+
+
+<span class="m2"><label for="Gender">Blood Group:</label></span>
+<span class="l1">
+<select name="gender" class="form-color">
+	<option value="">--- Choose a color ---</option>
+	<option value="A+">A+</option>
+	<option value="A-">A-</option>
+	<option value="B+">B+</option>
+    <option value="B-">B-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+</select>
+</span><br><br><br><br>
+
+
 <span class="m3"><label>NID No</label></span>
 <span class="l1"><input type="text" name="nid" /><br><br>
 
+ <span> Select image to upload:
+  <input type="file" name="my_image">
+  <input type="submit" value="upload" name="UPLOAD">
+  </span>
 
     <p class="m4">Please fill out the information</p>
 

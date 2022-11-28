@@ -1,5 +1,5 @@
 <?php 
-require_once("nid_showaction.php");
+require_once("nid_cardaction.php");
 ?>
 <html lang="en">
 <head>
@@ -7,20 +7,24 @@ require_once("nid_showaction.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID CARD</title>
-    <link rel="stylesheet" href="wadu.css">
+    <link rel="stylesheet" href="waduhek.css">
 </head>
 <body>
     <div class="container">
         <div class="front">
         
+        
             <img src="gv.png" id="img1">
            <p id="sp1">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</p>
           <p id="sp2">Government of the People`s Republic of Bangladesh</p>
           <p id="sp3">জাতীয় পরিচয়পত্র / National ID Card</p><hr>
+          
             <img src="ph1.jpg" id ="img2">
+            <img src="flag.png" id ="img21">
+            
             <p id="p1">Ashraful</p>
             
-
+          
 
 
             <?php if($data>0){
@@ -28,7 +32,7 @@ require_once("nid_showaction.php");
                     ($recShow = mysqli_fetch_object($qryShow))
                                     
             ?>
-            
+           
             <p id="p2">নাম</p> <p id="pn1"><?php echo $recShow->name1; ?></p>
             <p id="p3">Name</p><p id="pn2"><?php echo $recShow->name2; ?></p>
             <p id="p4">পিতা </p><p id="pn3"><?php echo $recShow->father; ?></p>
@@ -58,6 +62,7 @@ require_once("nid_showaction.php");
         </div>
         <div class="back">
            <p id="p6">If found please return to  :</p><hr>
+          
 
             <h1 id="p7">BUBT</h1>
             <p id="p8">

@@ -2,13 +2,13 @@
 session_start();
 require_once("conn_db.php");
 if (isset($_POST['btnInfo']) == "Insert") {
-	$name1 = $_POST['name2'];	
+	$name1 = $_POST['name1'];	
 	$name2 = $_POST['name2'];	
 	$father = $_POST['father'];	
 	$mother = $_POST['mother'];	
 	
     $date = date_format(date_create($_POST['validity']),"Y-m-d");
-	$blood = $_POST['blood'];
+	$blood = $_POST['gender'];
     $nid = $_POST['nid'];
 	
 	

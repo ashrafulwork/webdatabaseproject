@@ -1,6 +1,6 @@
 <?php
 require_once ("conn_db.php");
-$sqlShow = "SELECT * FROM nid_info";
+$sqlShow = "SELECT * FROM nid_info"; 
 $qryShow = mysqli_query($dbCon,$sqlShow);
 $data = mysqli_num_rows($qryShow);
 

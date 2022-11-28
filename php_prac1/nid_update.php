@@ -51,8 +51,9 @@
 
 
                     
-						<a target="_blank" href="nid_updateform.php?updtID=<?php echo $recShow->nid;?>">Update</a> /
+						<a target="_blank" href="nid_updateform.php?updtID=<?php echo $recShow->nid;?>">Update</a>
 						<a href="nid_deleteaction.php?dltID=<?php echo $recShow->nid;?>">Delete</a>
+						<a target="_blank" href="nid.php?updtID=<?php echo $recShow->nid;?>">Card View</a>
 					</td>
 				</tr>
 				<?php $i++;}}?>

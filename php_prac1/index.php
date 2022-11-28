@@ -14,8 +14,10 @@
 <body>
     
     <h1 align="center">Welcome to the home page </h1>
+
     <a href="nid_input.php" id="a1">NID</a>
     <a href="brlicense.php" id="a2">Driving license</a>
+  
     
     <form action=""></form>
 </body>

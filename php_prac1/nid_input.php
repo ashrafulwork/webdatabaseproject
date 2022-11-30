@@ -3,8 +3,8 @@
 
 <html lang="en">
 <head>
-<link rel="stylesheet" href="3.css">
-<link rel="stylesheet" href="nid_input1.css">
+<link rel="stylesheet" href="3_1.css">
+<link rel="stylesheet" href="nid_input11.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,10 +42,11 @@
 	<option value="A-">A-</option>
 	<option value="B+">B+</option>
     <option value="B-">B-</option>
-    <option value="O+">O+</option>
-    <option value="O-">O-</option>
     <option value="AB+">AB+</option>
     <option value="AB-">AB-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+    
 </select>
 </span><br><br><br><br>
 
@@ -53,11 +54,15 @@
 <span class="m3"><label>NID No</label></span>
 <span class="l1"><input type="text" name="nid" /><br><br>
 
- <span> Select image to upload:
-  <input type="file" name="my_image">
-  <input type="submit" value="upload" name="UPLOAD">
-  </span>
+ 
+	<br><br>
+  
 
+ <span class="ioi1"> Select image to upload:
+  <input type="file" name="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+  </span>
+  <br><br><br><br>
     <p class="m4">Please fill out the information</p>
 
     <input type="submit" name="btnInfo" value="Insert"  class="m5"/><br><br><br>

@@ -7,9 +7,9 @@ require_once("nid_showaction.php");
 <div>
 			<span style="text-align: center"><h3>Search Information from Table NID</h3>
 			</span>
-			<table border="1" align="center">
+			<table border="1" align="center" cellspacing="15">
 				<tr>
-					<td colspan="7">
+					<td colspan="8">
 						<form action="" method="post" enctype="multipart">
 							
 							
@@ -20,7 +20,7 @@ require_once("nid_showaction.php");
 					</td>
 				</tr>
 			<?php if(@$numSrch>0){ ?>
-				<tr style="background: #d5dbdb;">
+				<tr style="background: #d5dbdb;" >
                     <th>NAME1</th>
 					<th>NAME2</th>
 					<th>FATHER</th>
@@ -59,13 +59,14 @@ require_once("nid_showaction.php");
 	
 			<span style="text-align: center"><h3>Show List from Table NID</h3>
 			</span>
-            <link rel="stylesheet" href="5.css">
-			<table border="1" align="center">
+            
+			<link rel="stylesheet" href="hola5.css">
+			<table border="4" align="center" cellspacing="8">
 				<tr style="background: #d5dbdb;">
-					<th>NAME1</th>
-					<th>NAME2</th>
-					<th>FATHER</th>
-					<th>MOTHER</th>
+					<th>NAME</th>
+					<th>নাম </th>
+					<th>পিতা</th>
+					<th>মাতা</th>
 					<th>DATE</th>
 					<th>BLOOD</th>
                     <th>NID</th>
@@ -85,7 +86,7 @@ require_once("nid_showaction.php");
 					<td><?php echo $recShow->blood; ?></td>
                     <td><?php echo $recShow->nid; ?></td>
 					<td>
-					<a target="_blank" href="nid.php?updtID=<?php echo $recShow->nid;?>">Card View</a>
+					<a target="_blank" href="nid.php?updtID=<?php echo $recShow->nid;?>" id="ggwp3">Card View</a>
 					</td>
 				</tr>
 				<?php $i++;}}?>

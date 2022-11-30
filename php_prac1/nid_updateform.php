@@ -25,23 +25,23 @@
 
 		</span>
 		<form action="nid_updateaction.php" method="post" enctype="multipart">
-		<table border="1" align="center">
+		<table border="1" align="center" cellspacing="15">
 			<tr>
-				
+					
                 <td>
-					<label>NAME1:: </label>
+					<label>NAME:: </label>
 					<input type="text" name="name1" value="<?php echo $recUpdtShow->name1; ?>" />
 				</td>
                 <td>
-					<label>NAME2:: </label>
+					<label>নাম:: </label>
 					<input type="text" name="name2" value="<?php echo $recUpdtShow->name2; ?>" />
 				</td>
                 <td>
-					<label>FATHER:: </label>
+					<label>পিতা:: </label>
 					<input type="text" name="father" value="<?php echo $recUpdtShow->father; ?>" />
 				</td>
                 <td>
-					<label>MOTHER:: </label>
+					<label>মাতা:: </label>
 					<input type="text" name="mother" value="<?php echo $recUpdtShow->mother; ?>" />
 				</td>
                 <td>
@@ -59,13 +59,17 @@
 				<td> 
 					<label>BLOOD:: </label>
 					<select name="blood">
-						<option value="-99">Select Blood Group</option>
+						<option value="null">Select Blood Group</option>
 						<option <?php if($recUpdtShow->blood=="A+"){echo "selected";}?> value="A+">A+</option>
 						<option <?php if($recUpdtShow->blood=="A-"){echo "selected";}?> value="A-">A-</option>
 						<option <?php if($recUpdtShow->blood=="B+"){echo "selected";}?> value="B+">B+</option>
 						<option <?php if($recUpdtShow->blood=="B-"){echo "selected";}?> value="B-">B-</option>
 						<option <?php if($recUpdtShow->blood=="AB+"){echo "selected";}?> value="AB+">AB+</option>
 						<option <?php if($recUpdtShow->blood=="AB-"){echo "selected";}?> value="AB-">AB-</option>
+						<option <?php if($recUpdtShow->blood=="O+"){echo "selected";}?> value="O+">AB-</option>
+						<option <?php if($recUpdtShow->blood=="O-"){echo "selected";}?> value="O-">AB-</option>
+						
+					
 					</select>
 				</td>
 				

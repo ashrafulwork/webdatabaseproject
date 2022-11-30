@@ -1,74 +1,80 @@
-<?php 
-require_once("nid_cardaction.php");
-?>
+<?php session_start(); ?>
+<h1>NID FORM</h1>
+
 <html lang="en">
 <head>
+<link rel="stylesheet" href="3.css">
+<link rel="stylesheet" href="nid_input1.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ID CARD</title>
-    <link rel="stylesheet" href="wadu.css">
+    <title>NID INPUT</title>
 </head>
 <body>
-    <div class="container">
-        <div class="front">
-        
-            <img src="gv.png" id="img1">
-           <p id="sp1">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</p>
-          <p id="sp2">Government of the People`s Republic of Bangladesh</p>
-          <p id="sp3">জাতীয় পরিচয়পত্র / National ID Card</p><hr>
-            <img src="ph1.jpg" id ="img2">
-            <p id="p1">Ashraful</p>
-            
-          
-
-
-            <?php if($data>0){
-					
-                    ($recShow = mysqli_fetch_object($qryShow))
-                                    
-            ?>
-           
-            
-            <p id="p7">NID No&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="pn6">18192103137span></p> 
-            
-            <?php }?>
-
-          
-            <img src="sim.jpg" id ="img3">
-           
-           
-            
-            
+<?php 
+				if(@$_SESSION['msg']!=""){
+					echo $_SESSION['msg']; 
+					echo $_SESSION['msg']="";
+				}
+			?>
+<form action="nid_insert.php" method="post" enctype="multipart">
+<div class="div1">
+    <div class="div2">
+        <br>
+<span class="l1a"><label>নাম </label></span>
+<span class="l1"><input type="text" name="name1" />
+<span class="l11"><label>Name </label></span>
+<span class="l1"><input type="text" name="name2" /><br><br><br><br>
+<span class="l1b"><label>পিতা </label></span>
+<span class="l1"><input type="text" name="father" />
+<span class="l12"><label>মাতা </label></span>
+<span class="l1"><input type="text" name="mother" /><br><br><br>
+<span class="m1"><label>Date of Birth</label></span>
+<span class="l2"><input type="date" name="validity" />
 
 
 
-				
+<span class="m2"><label for="Gender">Blood Group:</label></span>
+<span class="l1">
+<select name="gender" class="form-color">
+	<option value="">--- Choose a color ---</option>
+	<option value="A+">A+</option>
+	<option value="A-">A-</option>
+	<option value="B+">B+</option>
+    <option value="B-">B-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+    
+</select>
+</span><br><br><br><br>
 
-            
 
-            
-           
-         
+<span class="m3"><label>NID No</label></span>
+<span class="l1"><input type="text" name="nid" /><br><br>
 
-        </div>
-        <div class="back">
-           <p id="p6">If found please return to  :</p><hr>
+ 
+	<br><br>
+  
 
-            <h1 id="p7">BUBT</h1>
-            <p id="p8">
-            Mirpur-2,Dhaka-1216.<br>
-            Phone: 9024266,9020132-4,<br>
-            9024277,9015397<br>
-            Cell: 01741129235,<br>
-            01967169189<br>
-            Email: info@bubt.edu.bd,<br>
-            Website: bubt.edu.bd
-        </p>
-        <img src="qr.jpg" id="img4">
-        <p id="p9">0009684044 147, 50252</p><br>
-        <p id="p10">Registar</p>
-        </div>
-    </div>
+ <span class="ioi1"> Select image to upload:
+  <input type="file" name="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+  </span>
+  <br><br><br><br>
+    <p class="m4">Please fill out the information</p>
+
+    <input type="submit" name="btnInfo" value="Insert"  class="m5"/><br><br><br>
+   <span> <a href="/webdatabaseproject/php_prac1/nid_show.php" id="a1">Show NID DATABASE</a></span><br><br><br>
+    <span><a href="/webdatabaseproject/php_prac1/" id="a2"> GO BACK TO HOME</a>	</span>
+</div>
+</div>
+
+
+
+
+
+
 </body>
 </html>

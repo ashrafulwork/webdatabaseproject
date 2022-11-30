@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-<link rel="stylesheet" href="5.css">
+<link rel="stylesheet" href="hola5.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,12 +23,12 @@
 			<span style="text-align: center"><h3>Show List & Update Option for Table Information</h3>
 			</span>
 
-			<table border="1" align="center">
+			<table border="1" align="center" cellspacing="8">
 				<tr style="background: #d5dbdb;">
-                    <th>NAME1</th>
-					<th>NAME2</th>
-					<th>FATHER</th>
-					<th>MOTHER</th>
+					<th>NAME</th>
+					<th>নাম </th>
+					<th>পিতা</th>
+					<th>মাতা</th>
 					<th>DATE</th>
 					<th>BLOOD</th>
                     <th>NID</th>
@@ -51,9 +51,9 @@
 
 
                     
-						<a target="_blank" href="nid_updateform.php?updtID=<?php echo $recShow->nid;?>">Update</a>
-						<a href="nid_deleteaction.php?dltID=<?php echo $recShow->nid;?>">Delete</a>
-						<a target="_blank" href="nid.php?updtID=<?php echo $recShow->nid;?>">Card View</a>
+						<a target="_blank" href="nid_updateform.php?updtID=<?php echo $recShow->nid;?>" id="ggwp1">Update</a><strong>&nbsp;/&nbsp;</strong>
+						<a href="nid_deleteaction.php?dltID=<?php echo $recShow->nid;?>"id="ggwp2">Delete</a><strong>&nbsp;/&nbsp;</strong>
+						<a target="_blank" href="nid.php?updtID=<?php echo $recShow->nid;?>" id="ggwp3">Card View</a>
 					</td>
 				</tr>
 				<?php $i++;}}?>
